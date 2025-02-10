@@ -44,16 +44,19 @@ export default component$(() => {
       <div id="pipContentContainer">
         <section ref={pipContentSig}>
           stufff that goes inside the PIP {countSig.value}
-          <button ref={countUpBTN}>count up</button>
+          {/* <button ref={countUpBTN}>count up</button> */}
           <button ref={countDwnBTN}>count down</button>
         </section>
       </div>
       <button ref={openPipSig}>On picture in picture</button>
       <DPIPcomponent
         pipTrigger={openPipSig}
-        pipContent={pipContentSig}
-        pipContainer="#pipContentContainer"
-      />
+        // pipContent={pipContentSig}
+        // pipContainer="#pipContentContainer"
+      >
+        <div> Ok lets see if this works</div>
+        <button ref={countUpBTN}>count up</button>
+      </DPIPcomponent>
 
       {/* <myJSX /> */}
     </>
